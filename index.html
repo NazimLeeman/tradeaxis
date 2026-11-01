@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trade Axis | A Family Business Built on Trust</title>
+  <meta name="description" content="Trade Axis is a family-owned trading business built on trust, integrity, and long-term relationships.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#home" class="logo">Trade<span>Axis</span></a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">What We Do</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">A Family Business</p>
+        <h1>Trade built on trust,<br>carried across generations.</h1>
+        <p class="lead">
+          Trade Axis is a family-owned company committed to honest dealings,
+          reliable partnerships, and quality in everything we do.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get in Touch</a>
+          <a href="#leadership" class="btn btn-ghost">Meet Our Family</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about">
+        <div>
+          <p class="eyebrow">About Us</p>
+          <h2>Rooted in family values</h2>
+        </div>
+        <div class="about-text">
+          <p>
+            Trade Axis began with a simple belief: business is about people.
+            Guided by the experience of our elders and the energy of the next
+            generation, we have grown by keeping our word and treating every
+            client like family.
+          </p>
+          <p>
+            Today we continue that tradition, combining time-tested values with
+            a modern approach to serve our partners with care and consistency.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section section-alt">
+      <div class="container">
+        <p class="eyebrow center">What We Do</p>
+        <h2 class="center">How we serve our partners</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">&#9878;</div>
+            <h3>General Trading</h3>
+            <p>Sourcing and supplying quality goods with fair pricing and dependable delivery.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">&#9992;</div>
+            <h3>Import &amp; Export</h3>
+            <p>Connecting local and international markets through trusted networks.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">&#9734;</div>
+            <h3>Long-Term Partnerships</h3>
+            <p>Building lasting relationships founded on honesty, respect, and results.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="leadership" class="section">
+      <div class="container">
+        <p class="eyebrow center">Leadership</p>
+        <h2 class="center">The family behind Trade Axis</h2>
+        <div class="team">
+          <figure class="member">
+            <div class="photo">
+              <img src="images/chairman-mosharraf-hossain.jpg" alt="Chowdhury Mosharraf Hossain, Chairman" loading="lazy">
+            </div>
+            <figcaption>
+              <h3>Chowdhury Mosharraf Hossain</h3>
+              <p>Chairman</p>
+            </figcaption>
+          </figure>
+          <figure class="member">
+            <div class="photo">
+              <img src="images/executive-chairman-mobarak-hossain.jpg" alt="Chowdhury Mobarak Hossain, Executive Chairman" loading="lazy">
+            </div>
+            <figcaption>
+              <h3>Chowdhury Mobarak Hossain</h3>
+              <p>Executive Chairman</p>
+            </figcaption>
+          </figure>
+          <figure class="member">
+            <div class="photo">
+              <img src="images/ceo-rahat-mahamud.jpg" alt="Chowdhury Rahat Mahamud, Chief Executive Officer" loading="lazy">
+            </div>
+            <figcaption>
+              <h3>Chowdhury Rahat Mahamud</h3>
+              <p>Chief Executive Officer</p>
+            </figcaption>
+          </figure>
+          <figure class="member">
+            <div class="photo">
+              <img src="images/cao-rabeya-akther.jpg" alt="Rabeya Akther, Chief Administrative Officer" loading="lazy">
+            </div>
+            <figcaption>
+              <h3>Rabeya Akther</h3>
+              <p>Chief Administrative Officer</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-dark">
+      <div class="container contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let's work together</h2>
+          <p>We would be glad to hear from you. Reach out and our team will get back to you shortly.</p>
+        </div>
+        <ul class="contact-list">
+          <li><span>Email</span><a href="mailto:info@tradeaxis.com">info@tradeaxis.com</a></li>
+          <li><span>Phone</span><a href="tel:+8800000000000">+880 0000-000000</a></li>
+          <li><span>Address</span>Dhaka, Bangladesh</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Trade Axis. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+    links.querySelectorAll('a').forEach(a =>
+      a.addEventListener('click', () => {
+        links.classList.remove('open');
+        toggle.setAttribute('aria-expanded', false);
+      })
+    );
+  </script>
+</body>
+</html>
